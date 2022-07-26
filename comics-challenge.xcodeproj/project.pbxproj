@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		55026E1C289097DF0064E1CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E1B289097DF0064E1CB /* AppDelegate.swift */; };
 		55026E1E289097DF0064E1CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E1D289097DF0064E1CB /* SceneDelegate.swift */; };
-		55026E20289097DF0064E1CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E1F289097DF0064E1CB /* ViewController.swift */; };
-		55026E23289097DF0064E1CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55026E21289097DF0064E1CB /* Main.storyboard */; };
 		55026E25289097E30064E1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55026E24289097E30064E1CB /* Assets.xcassets */; };
 		55026E28289097E30064E1CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55026E26289097E30064E1CB /* LaunchScreen.storyboard */; };
 		55026E33289097E30064E1CB /* comics_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E32289097E30064E1CB /* comics_challengeTests.swift */; };
 		55026E3D289097E30064E1CB /* comics_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E3C289097E30064E1CB /* comics_challengeUITests.swift */; };
 		55026E3F289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E3E289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift */; };
+		55026E5128909A7B0064E1CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E4F28909A7B0064E1CB /* HomeViewController.swift */; };
+		55026E5228909A7B0064E1CB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55026E5028909A7B0064E1CB /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		55026E18289097DF0064E1CB /* comics-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "comics-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55026E1B289097DF0064E1CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55026E1D289097DF0064E1CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		55026E1F289097DF0064E1CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		55026E22289097DF0064E1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55026E24289097E30064E1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55026E27289097E30064E1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55026E29289097E30064E1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +47,8 @@
 		55026E38289097E30064E1CB /* comics-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "comics-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55026E3C289097E30064E1CB /* comics_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comics_challengeUITests.swift; sourceTree = "<group>"; };
 		55026E3E289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comics_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55026E4F28909A7B0064E1CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55026E5028909A7B0064E1CB /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 		55026E1A289097DF0064E1CB /* comics-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				55026E4D2890992E0064E1CB /* Common */,
+				55026E4B289098FB0064E1CB /* Modules */,
 				55026E1B289097DF0064E1CB /* AppDelegate.swift */,
 				55026E1D289097DF0064E1CB /* SceneDelegate.swift */,
-				55026E1F289097DF0064E1CB /* ViewController.swift */,
-				55026E21289097DF0064E1CB /* Main.storyboard */,
 				55026E24289097E30064E1CB /* Assets.xcassets */,
 				55026E26289097E30064E1CB /* LaunchScreen.storyboard */,
 				55026E29289097E30064E1CB /* Info.plist */,
@@ -125,6 +125,38 @@
 				55026E3E289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift */,
 			);
 			path = "comics-challengeUITests";
+			sourceTree = "<group>";
+		};
+		55026E4B289098FB0064E1CB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				55026E4C2890990B0064E1CB /* Home */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		55026E4C2890990B0064E1CB /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				55026E4F28909A7B0064E1CB /* HomeViewController.swift */,
+				55026E5028909A7B0064E1CB /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		55026E4D2890992E0064E1CB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				55026E4E289099390064E1CB /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		55026E4E289099390064E1CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +265,7 @@
 			files = (
 				55026E28289097E30064E1CB /* LaunchScreen.storyboard in Resources */,
 				55026E25289097E30064E1CB /* Assets.xcassets in Resources */,
-				55026E23289097DF0064E1CB /* Main.storyboard in Resources */,
+				55026E5228909A7B0064E1CB /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55026E20289097DF0064E1CB /* ViewController.swift in Sources */,
 				55026E1C289097DF0064E1CB /* AppDelegate.swift in Sources */,
 				55026E1E289097DF0064E1CB /* SceneDelegate.swift in Sources */,
+				55026E5128909A7B0064E1CB /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		55026E21289097DF0064E1CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				55026E22289097DF0064E1CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		55026E26289097E30064E1CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +468,6 @@
 				INFOPLIST_FILE = "comics-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +495,6 @@
 				INFOPLIST_FILE = "comics-challenge/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
