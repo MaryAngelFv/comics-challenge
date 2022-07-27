@@ -14,8 +14,14 @@
 		55026E33289097E30064E1CB /* comics_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E32289097E30064E1CB /* comics_challengeTests.swift */; };
 		55026E3D289097E30064E1CB /* comics_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E3C289097E30064E1CB /* comics_challengeUITests.swift */; };
 		55026E3F289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E3E289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift */; };
-		55026E5128909A7B0064E1CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E4F28909A7B0064E1CB /* HomeViewController.swift */; };
-		55026E5228909A7B0064E1CB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55026E5028909A7B0064E1CB /* HomeViewController.xib */; };
+		55026E5128909A7B0064E1CB /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E4F28909A7B0064E1CB /* HomeTabBarController.swift */; };
+		55026E562890A8910064E1CB /* ComicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E542890A8910064E1CB /* ComicListViewController.swift */; };
+		55026E572890A8910064E1CB /* ComicListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55026E552890A8910064E1CB /* ComicListViewController.xib */; };
+		55026E5B2890AC9E0064E1CB /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E592890AC9E0064E1CB /* FavouritesViewController.swift */; };
+		55026E5C2890AC9E0064E1CB /* FavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55026E5A2890AC9E0064E1CB /* FavouritesViewController.xib */; };
+		55026E5E2890DD490064E1CB /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E5D2890DD490064E1CB /* Comic.swift */; };
+		55026E602890E02C0064E1CB /* ComicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E5F2890E02C0064E1CB /* ComicListPresenter.swift */; };
+		55026E622890E5F10064E1CB /* ComicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55026E612890E5F00064E1CB /* ComicListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +53,14 @@
 		55026E38289097E30064E1CB /* comics-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "comics-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55026E3C289097E30064E1CB /* comics_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comics_challengeUITests.swift; sourceTree = "<group>"; };
 		55026E3E289097E30064E1CB /* comics_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comics_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		55026E4F28909A7B0064E1CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		55026E5028909A7B0064E1CB /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		55026E4F28909A7B0064E1CB /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		55026E542890A8910064E1CB /* ComicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicListViewController.swift; sourceTree = "<group>"; };
+		55026E552890A8910064E1CB /* ComicListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicListViewController.xib; sourceTree = "<group>"; };
+		55026E592890AC9E0064E1CB /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		55026E5A2890AC9E0064E1CB /* FavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesViewController.xib; sourceTree = "<group>"; };
+		55026E5D2890DD490064E1CB /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
+		55026E5F2890E02C0064E1CB /* ComicListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicListPresenter.swift; sourceTree = "<group>"; };
+		55026E612890E5F00064E1CB /* ComicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +142,8 @@
 		55026E4B289098FB0064E1CB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55026E582890AB6F0064E1CB /* Favourites */,
+				55026E532890A5CF0064E1CB /* ComicList */,
 				55026E4C2890990B0064E1CB /* Home */,
 			);
 			path = Modules;
@@ -138,8 +152,7 @@
 		55026E4C2890990B0064E1CB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				55026E4F28909A7B0064E1CB /* HomeViewController.swift */,
-				55026E5028909A7B0064E1CB /* HomeViewController.xib */,
+				55026E4F28909A7B0064E1CB /* HomeTabBarController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -155,8 +168,29 @@
 		55026E4E289099390064E1CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				55026E5D2890DD490064E1CB /* Comic.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		55026E532890A5CF0064E1CB /* ComicList */ = {
+			isa = PBXGroup;
+			children = (
+				55026E542890A8910064E1CB /* ComicListViewController.swift */,
+				55026E552890A8910064E1CB /* ComicListViewController.xib */,
+				55026E5F2890E02C0064E1CB /* ComicListPresenter.swift */,
+				55026E612890E5F00064E1CB /* ComicListTableViewCell.swift */,
+			);
+			path = ComicList;
+			sourceTree = "<group>";
+		};
+		55026E582890AB6F0064E1CB /* Favourites */ = {
+			isa = PBXGroup;
+			children = (
+				55026E592890AC9E0064E1CB /* FavouritesViewController.swift */,
+				55026E5A2890AC9E0064E1CB /* FavouritesViewController.xib */,
+			);
+			path = Favourites;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +297,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55026E5C2890AC9E0064E1CB /* FavouritesViewController.xib in Resources */,
 				55026E28289097E30064E1CB /* LaunchScreen.storyboard in Resources */,
 				55026E25289097E30064E1CB /* Assets.xcassets in Resources */,
-				55026E5228909A7B0064E1CB /* HomeViewController.xib in Resources */,
+				55026E572890A8910064E1CB /* ComicListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,8 +326,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55026E1C289097DF0064E1CB /* AppDelegate.swift in Sources */,
+				55026E622890E5F10064E1CB /* ComicListTableViewCell.swift in Sources */,
+				55026E5E2890DD490064E1CB /* Comic.swift in Sources */,
 				55026E1E289097DF0064E1CB /* SceneDelegate.swift in Sources */,
-				55026E5128909A7B0064E1CB /* HomeViewController.swift in Sources */,
+				55026E562890A8910064E1CB /* ComicListViewController.swift in Sources */,
+				55026E5B2890AC9E0064E1CB /* FavouritesViewController.swift in Sources */,
+				55026E5128909A7B0064E1CB /* HomeTabBarController.swift in Sources */,
+				55026E602890E02C0064E1CB /* ComicListPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
